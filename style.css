@@ -1,0 +1,133 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.source-suns{
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid;
+    padding: 5px 10px;
+}
+#header{
+    /* background-color: aquamarine;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around; */
+}
+
+
+#main{
+    display: flex;
+    flex-direction: row;
+
+}
+#sideNav, #content, #rightSidebar{
+    margin: 0 5px;
+    
+}
+#sideNav{
+    width: 10%;
+    min-width: 200px;
+    text-align: left;
+    
+
+}
+.innerNav{
+    background-color: #E7E9EB;
+    height: 100%;
+
+    overflow-y: scroll;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+}
+.active{
+    background-color: #04AA6D!important;
+    color: white;
+}
+.listItem:hover{
+    background-color:#cccccc ;
+}
+.active:hover{
+    background-color: #048656 !important;
+    color: white !important;
+}
+.listItem{
+display: block;
+line-height: 1.5;
+padding: 2px 1px 1px 16px;
+font-size: 1.2rem;
+}
+#content{
+    width: 75%;
+}
+
+#rightSidebar{
+    width: 15%;
+    min-width: 100px;
+}
+
+.navigation{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+
+   
+}
+
+.prevBtn, .nextBtn{
+    background-color: #04AA6D;
+    border-color: #04AA6D;
+    font-size: 18px;
+    padding: 0 19px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    color:#FFFFFF
+
+} 
+.btn{
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: center;
+    text-align: center;
+    white-space: nowrap;
+}
+.red{
+    color: #ff0000;
+}
+.green{
+    color:#0b7a0b
+}
+.violet{
+    color:violet
+}
+.flex{
+    display: flex;
+   justify-content: space-around;
+   
+}
+.transform .container, .transform .inner{
+    width: 200px;
+    height: 200px;
+}
+.transform .container{
+    border: 2px solid steelblue;
+    background-color: aquamarine;
+}
+
+.transform .inner{
+    border: 2px solid brown;
+    background-color: palegoldenrod;
+    /* transform: scale(0.25, 0.5); */
+    transform: rotate(-45deg);
+}
