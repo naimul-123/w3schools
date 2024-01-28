@@ -1,73 +1,151 @@
-<article class="article">
-    <header class="articleHeader">
-        <h3>Javascript conditional</h3>
-    </header>
-    <section>
-        <h4>Diffrent type of comparison</h4>
-        <ol>
-        <li>greater than</li>
-            <li>less than</li>
-            <li>Equal</li>
-            <li>greater than or Equal</li>
-            <li>less than or equal</li>
-            <li>and: &&</li>
-            <li>or: ||</li>
-            <li>== check only value</li>
-            <li> === check value and type</li>
-            <li>!= check only value</li>
-            <li>!== check value and type</li>
-        </ol>
+<div class=" px-5">
+        <h3 class="text-5xl font-normal m-2.5 capitalize">Javascript conditional</h3>
+    <div>
+        <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
+            
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">Diffrent type of comparison</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <ol>
+                    <li>greater than</li>
+                        <li>less than</li>
+                        <li>Equal</li>
+                        <li>greater than or Equal</li>
+                        <li>less than or equal</li>
+                        <li>and: &&</li>
+                        <li>or: ||</li>
+                        <li>== check only value</li>
+                        <li> === check value and type</li>
+                        <li>!= check only value</li>
+                        <li>!== check value and type</li>
+                    </ol>
+            </div>     
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">If else syntax:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>
+                    if(condition){ <br>
+                       if condition true,   code will execute <br>
+                    } <br>
+            
+                    else{ <br>
+                        if condition false,  code will execute <br>
+                    } <br>
+            
+                </p>
+            </div>
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal">If else Complex condition syntax:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>
+                    if((condition-1 || condition-2) && condition-3){ <br>
+                        এরকম ক্ষেত্রে 1 ও 2 এর যে কোনো একটি এবং 3 নং টি সত্য হতে হবে। <br>
+                    } <br>
+            
+                    if((condition-1 && condition-2) || condition-3){ <br>
+                        এরকম ক্ষেত্রে 1 ও 2 এর দুইটিই অথবা 3 নং টি সত্য হতে হবে। <br>
+                    } <br>
+            
+                    else{ <br>
+                        if condition false,  code will execute <br>
+                    } <br>
+            
+                </p>
+            </div>
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">If else Multi laevel condition syntax:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
 
-        <h4>Conditional </h4>
-        <p>
-        if(condition){ <br>
-           if condition true,   code will execute <br>
-        } <br>
+               <p>if(condition){ <br>
+                //execute code if condition be true<br>
+               }<br>
+               else{<br>
+                if(condition){<br>
+                    //execute code if condition be true<br>
+                }<br>
+                else{<br>
+                    if(condition){<br>
+                        //execute code if condition be true<br>
+                    }<br>
+                    else{<br>
+                        //execute code if anything be not true<br>
+                        <br>
+                    }<br>
+                }<br>
+               }</p>
+            
+            </div>
+        </div>
+ 
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal">Ternary condition syntax:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
 
-        else{ <br>
-            if condition false,  code will execute <br>
-        } <br>
+                <p>condition ? (true result) : (flase result)</p>
+            
+            </div>
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal">Logical not (!) operator:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
 
-    </p>
+                <p>Logical not operator !</p>
+
+
+            
+            </div>
+        </div>
+
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">switch syntax:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>if -else এর একটি আপডেটেড ভারসন হল switch statement. </p>
+                <p>
+                    const calcGrading=(score)=>{<br>
+                        let greadingScore;<br>
+                        switch(true){<br>
+                            case (score<= 100 && score >=90):<br>
+                                greadingScore= "A+"<br>
+                                break;<br>
+                            case (score<= 89 && score >=80):<br>
+                                greadingScore= "A"<br>
+                                break;<br>
+                            case (score<= 79 && score >=70):<br>
+                                greadingScore= "A-"<br>
+                                break;<br>
+                            case (score<= 69 && score >=60):<br>
+                                greadingScore= "B"<br>
+                                break;<br>
+                            case (score<= 59 && score >=50):<br>
+                                greadingScore= "B-"<br>
+                                break;<br>
+                            case (score<= 49 && score >=40):<br>
+                                greadingScore= "C"<br>
+                                break;<br>
+                            case (score< 40 && score >=0):<br>
+                                greadingScore= "F"<br>
+                                break;<br>
+                            default:<br>
+                                greadingScore="Invalid score"<br>
+                    
+                        }<br>
+                        return greadingScore;<br>
+                    }<br>
+                    
+                    console.log(calcGrading(90))//return A+<br>
+                    console.log(calcGrading(80))//return A<br>
+                    console.log(calcGrading(102))//return Invalid score<br>
+               
+                  </p>
+            
+            </div>
+        </div>
+ 
     
-
-
-        <p>একাধিক কন্ডিশন && অথবা || </p>
-     <p>Complex condition ((condition-1 || condition-2) && condition-3) এরকম ক্ষেত্রে 1 ও 2 এর যে কোনো একটি এবং 3 নং টি সত্য হতে হবে।</p>
-    <p>Multi laevel condition</p>
-    if(condition){ <br>
-        code <br>
-    }<br>
-
-    else if (condition){<br>
-        code<br>
-    }<br>
-    else{<br>
-        code<br>
-    }<br>
-    <p>Nested condition</p>
-   <p>if(condition){
-
-   }
-   else{
-    if(condition){
-
-    }
-    else{
-        if(condition){
-
-        }
-        else{
-
-        }
-    }
-   }</p>
-
-   <p>Ternary condition</p>
-   <p>condition ? (true result) : (flase result)</p>
-   <p>Logical not operator !</p>
-
-   <p>Javascript switch case statement</p>
+    </div>
    
-    </section>
-</article>
+    </div>
+</div>
