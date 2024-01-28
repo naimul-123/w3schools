@@ -36,7 +36,8 @@ const topicItems = document.querySelectorAll(".topic");
 let listItem;
 topicItems.forEach((item) => {
     item.addEventListener('click', () => {
-        moduleCounter = 0;
+        moduleCounter = 0;    
+
         topicItems.forEach((item)=>{
             if(item.classList.contains("active")){
                 item.classList.remove("active");
@@ -70,8 +71,17 @@ topicItems.forEach((item) => {
                 fetch(`${topicName}\\${modules[topicName][0]}.html`)
                 .then(response => response.text())
                 .then(function(data){
-                document.getElementById('contentArea').innerHTML = data;  
+                document.getElementById('contentArea').innerHTML = data; 
+                document.querySelectorAll(".prevBtn").forEach((btn)=>{
+                    if(moduleCounter<=0){
+                        btn.innerHTML="Home"
+                    }
+                    else{
+                        btn.innerHTML="Previous"
+                    }
+                }) 
                 })
+
             })
             .then(function(){
                  
@@ -84,6 +94,16 @@ topicItems.forEach((item) => {
                         })
                         list.classList.add("active");
                         moduleCounter=key;
+                        document.querySelectorAll(".prevBtn").forEach((btn)=>{
+                            document.querySelectorAll(".prevBtn").forEach((btn)=>{
+                                if(moduleCounter<=0){
+                                    btn.innerHTML="Home"
+                                }
+                                else{
+                                    btn.innerHTML="Previous"
+                                }
+                            })
+                        })
                         const listData = list.innerHTML;
                         fetch(`${topicName}\\${listData}.html`)
                         .then(response => response.text())
@@ -112,8 +132,18 @@ topicItems.forEach((item) => {
                         .then(response => response.text())
                         .then(function(data){
                             document.getElementById('contentArea').innerHTML = data;
+                            document.querySelectorAll(".prevBtn").forEach((btn)=>{
+                                if(moduleCounter<=0){
+                                    btn.innerHTML="Home"
+                                }
+                                else{
+                                    btn.innerHTML="Previous"
+                                }
+                            })
                              
                         })
+
+
                         
                     }
                       
@@ -128,7 +158,7 @@ topicItems.forEach((item) => {
                             list.classList.remove("active");
 
                         })
-                    if(moduleCounter>0){
+                    if(moduleCounter>=1){
                         moduleCounter--;
                         listItem[moduleCounter].classList.add("active");
                         fetch(`${topicName}\\${modules[topicName][moduleCounter]}.html`)
@@ -136,7 +166,21 @@ topicItems.forEach((item) => {
                         .then(function(data){
                             document.getElementById('contentArea').innerHTML = data;
                              
-                        })  
+                        }) 
+                        document.querySelectorAll(".prevBtn").forEach((btn)=>{
+                            if(moduleCounter<=0){
+                                btn.innerHTML="Home"
+                            }
+                            else{
+                                btn.innerHTML="Previous"
+                            }
+                        })
+                    }
+
+                    else {
+                        fetch(`home.html`)
+                        .then(response=> response.text())
+                        .then(data=> document.getElementById("main").innerHTML = data);
                     }
                       
                     })
