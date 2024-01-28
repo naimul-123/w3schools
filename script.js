@@ -7,13 +7,14 @@ css:[
 'rules', 'css -3 Features', 'transform', 'animation','resources'
 ],
 git:[],
-Javascript:[ 'javascript basic']
+Javascript:[ 'javascript basic', 'javascript conditional', 'javascript array']
 
 }
 
 const module = Object.keys(modules);
 
-let topics = `<ul class= "mainMenu flex justify-center bg-[#282A35]  "> `
+let topics = `<button class="menu-btn md:hidden text-base text-white uppercase py-1 px-4 hover:bg-black"><i class="fa-solid fa-bars"></i></button>
+<ul class= "mainMenu flex justify-center bg-[#282A35]  ">  `
 
 module.forEach((topic)=>{
     topics = `${topics} <li class= "topic text-base text-white uppercase py-1 px-4 hover:bg-black">${topic} </li>`
@@ -52,7 +53,7 @@ topicItems.forEach((item) => {
                     item.classList.add("active");
                     let navList = "";
                     modules[topicName].forEach(function(list)  {
-                        navList = `${navList}<li class="listItem">${list}</li> `;
+                        navList = `${navList}<li class="listItem uppercase">${list}</li> `;
                     });
                     document.getElementById("navList").innerHTML = navList;
                 }        
@@ -141,9 +142,41 @@ topicItems.forEach((item) => {
                     })
                 }) 
             })
+            .then(function(){
+               const contentArea= document.getElementById('contentArea');
+               contentArea.addEventListener("click", function(){
+                // alert("This is content area");
+                const sideNav= document.getElementById("sideNav");
+                if(!(sideNav.classList.contains('hidden'))){
+                    sideNav.classList.add('hidden')
+                }
+
+               })
+               contentArea.addEventListener("wheel", function(){
+                // alert("This is content area");
+                const sideNav= document.getElementById("sideNav");
+                if(!(sideNav.classList.contains('hidden'))){
+                    sideNav.classList.add('hidden')
+                }
+
+               })
+
+            })
             .catch(error => console.error('Error fetching content:', error));        
     });
 });
 
 
+
+const menuBtn= document.querySelectorAll(".menu-btn")[0];
+
+menuBtn.addEventListener("click", ()=>{
+    const sideNav= document.getElementById("sideNav");
+    if(sideNav.classList.contains('hidden')){
+        sideNav.classList.remove('hidden');
+    }
+    else{
+        sideNav.classList.add('hidden')
+    }
+})
 

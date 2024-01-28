@@ -1,4 +1,7 @@
-<aside id="sideNav">
+<div class="grid grid-cols-12 gap-3 relative">
+
+
+<aside id="sideNav" class="col-span-12 md:col-span-4 lg:col-span-3 xl:col-span-2 hidden  md:block absolute md:static  top-0 ">
     <nav class="innerNav">
         <ul id="navList">
             
@@ -6,7 +9,7 @@
     </nav>   
 </aside>
 
-<div id="content">
+<div id="content" class="col-span-12 md:col-span-8 lg:col-span-9 xl:col-span-8 py-6 max-h-dvh overflow-y-auto">
     <div class="navigation">
         <button class="prevBtn btn">Previous</button>
         <Button class="nextBtn btn">Next</Button>
@@ -19,7 +22,7 @@
         <Button class="nextBtn btn">Next</Button>
     </div>
 </div>
-<aside id="rightSidebar">
+<aside id="rightSidebar" class="col-span-12 xl:col-span-2" >
     <h2>Advertisement Area</h2>
     <nav>
         <ul id="">
@@ -27,3 +30,4 @@
         </ul>
     </nav>
 </aside>
+</div>
