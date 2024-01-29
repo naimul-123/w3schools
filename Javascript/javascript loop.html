@@ -1,0 +1,124 @@
+<div class=" px-5">
+        <h3 class="text-5xl font-normal m-2.5 capitalize">Javascript Loop</h3>
+    <div>
+        <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
+            
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">Diffrent type of loop:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>loop বলতে কোনো একটি কাজ একাধিকবার করা বোঝায়।</p>
+                <ol>
+                    <li>for of loop</li>
+                    <li>while loop</li>
+                    <li>for loop</li>
+                    <li>do while loop</li>
+                </ol>
+            </div>     
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">for of loop:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>Array অথবা string এর প্রত্যেকটি উপাদান নিয়ে কাজ করার জন্য for of loop ব্যবহার হয়।</p>
+                <p>
+                    const numbers = [1,5,6,8,10]; <br>
+                    for(num of numbers){<br>
+                        console.log(num);<br>
+                    }<br>
+                    returns numbers array element one by one
+            
+                </p>
+            </div>
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal">While loop:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>কোনো একটি কাজ একটি নির্দিষ্ট শর্ত সত্য থাকা অবধি চলতে থাকবে এরূপ ক্ষেত্রে while loop ব্যবহার হবে।</p>
+                <p>
+                    let num = 0; <br>
+                        while(num &lt;5){ <br>
+                            console.log(`Loop until number become ${num}`)<br>
+                            num++<br>
+                        }<br>
+                </p>
+
+                <p>এখানে num এর ভ্যালু 5 না হওয়া অবধি এই লুপটি চলতে থাকবে। while loop এ সাধারণত ইনিশিয়াল ভ্যালু ডিফাইন করা থাকে না। </p>
+            </div>
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">For loop:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>for loop while loop এর মতোই। পার্থক্য হল syntax লেখাতে।          </p>
+                <p>
+                    for(let num = 1; num&lt;=10; num++){<br>
+
+                        console.log(num) <br>
+                    } <br>
+                </p>
+            
+            </div>
+        </div>
+ 
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal">loop break:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+
+                <p>loop এ আমাদের যদি একটা নির্দিষ্ট স্টেজে এসে থেমে যাওয়ার প্রয়োজন হয়, তাহলে আমরা break এর মাধ্যমে লুপটাকে থামিয়ে দিতে পারি।</p>
+                <p>
+                    for(let num = 1; num&lt;=10; num++){<br>
+
+                        console.log(num) <br>
+                        if(num>5){<br>
+                            break;<br>
+                        }<br>
+                    } <br>
+                </p>
+
+                <p>এখানে num এর ভ্যালু যখন 5 এর বড় হয়ে যাবে, তখন লুপটি থেমে যাবে।</p>
+            </div>
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal">loop continue:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+
+                <p>continue -> skip rest of the code for this iteration. একটি নির্দিষ্ট কন্ডিশন সত্য হলে লুপটি পরবর্তী  কোডে না গিয়ে আবার শুরুতে চলে যাওয়া।</p>
+
+                <p>
+                    for(let num = 1; num&lt;=10; num++){<br>
+
+
+                        if(num%2===1){<br>
+                            continue;<br>
+                        }<br>
+
+                        console.log(num) <br>
+                    } <br>
+                </p>
+                <p>এখানে যখন num%2===1 সত্য হবে তখন লুপটি নিচের  কোডকে এক্সিকিউট না করে পুনরায় শুরুতে চলে যাবে।</p>
+            </div>
+        </div>
+
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">do while loop:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>normal while loop শর্ত সত্য না হলে চলবে না। কিন্তু do while loop আগে কোড এক্সিকিউট করে তারপরে শর্ত চেক করে। যদি শর্ত সত্য হয় তাহলে আবার চলে।</p>
+                
+                    <p>
+                        let num = 0; <br>
+                        do{
+                            console.log(`Loop until number become ${num}`)<br>
+                            num++<br>
+                        }
+                            while(num &lt;5){ <br>
+                                
+                            }<br>
+                    </p>
+               
+            
+            </div>
+        </div>
+ 
+    
+    </div>
+   
+    </div>
+</div>

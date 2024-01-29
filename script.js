@@ -7,13 +7,13 @@ css:[
 'rules', 'css -3 Features', 'transform', 'animation','resources'
 ],
 git:[],
-Javascript:[ 'javascript basic', 'javascript conditional', 'javascript array']
+Javascript:[ 'javascript basic', 'javascript conditional', 'javascript array', 'javascript loop']
 
 }
 
 const module = Object.keys(modules);
 
-let topics = `<button class="menu-btn md:hidden text-base text-white uppercase py-1 px-4 hover:bg-black"><i class="fa-solid fa-bars"></i></button>
+let topics = `<button class="menu-btn md:hidden text-base text-white uppercase py-1 px-4 hover:bg-black text-white"><i class="fa-solid fa-bars"></i></button>
 <ul class= "mainMenu flex justify-center bg-[#282A35]  ">  `
 
 module.forEach((topic)=>{
