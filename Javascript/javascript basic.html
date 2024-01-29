@@ -1,191 +1,245 @@
-<article class="article">
-    <header class="articleHeader">
-        <h3>Javascript Basic</h3>
-    </header>
-    <section>
-        <h3>Video-1->জাভাস্ক্রিপ্ট প্রাথমিক আলোচনা।</h3>
-        <p>পৃথিবীর একটি পাওয়ারফুল প্রোগ্রামিং ল্যাংগুয়েজ হল জাভাস্ক্রিপ্ট। আগে ওয়েবসাইটগুলো ছিল অনেকটা বইয়ের মতো। কিছু রিচার্সের কাজে ওয়েবসাইট ব্যবহার হলেও এর কোনো ইউজার ইন্টারএক্টিভিটি ছিল না। অর্থাৎ ইউজার ওয়েবসাইট শুধু  দেখতেই পারতো। ওয়েবসাইটে  কোনো কিছু পরিবর্তন বা তার  কোনো মতামত দিতে পারতো না। এরপর ডেভেলপাররা চিন্তা করলো কিভাবে ওয়েবসাইটগুলো সাধারন মানুষের আরো অনেক কাজ করার কাজে ব্যবহার করা যায়। এই চিন্তা থেকেই ব্রেন্ডন এইচ ১৯৯৫  সালে মাত্র ১০ দিনে জাভাস্ক্রিপ্ট তৈরি করেন। পরে ১৯৯৭ সালে এটিকে অফিসিয়াল স্ট্যান্ডার্ড একমাতে রেজিস্ট্রার্ড করে। আর এর অফিসিয়াল নাম হয়  একমা স্ক্রিপ্ট।</p>
-        <h4>জাভাস্ক্রিপ্ট ইউজ করার উপায়</h4>
-        <p>আমরা এর আগে সিএসএস এর ব্যবহার শিখেছি। সিএসএস এর মতো জাভাস্ক্রিপ্ট ও ৩ ভাবে ব্যবহার করা যায়। </p>
-        <ol>
-            <li>ইনলাইন জাভাস্ক্রিপ্ট</li>
-            <li>স্ট্রিপ্ট ট্যাগের মাধ্যমে১</li>
-            <li>এক্সটার্নাল সোর্স এর মাধ্যমে। এ ক্ষেত্রে </li>
-        </ol>
-        <p>জাভাস্ক্রিপ্ট  হাই লেভেল ল্যাংগুয়েজ।  যেসকল প্রোগ্রামিং ল্যাংগুয়েজ মানুষ ও কম্পিউটার উভয়েই কিছু কিছু বুঝতে পারে সেগুলোকে হাই লেভেল ল্যাংগুয়েজ। </p>
-        <p>জাভাস্ক্রিপ্ট  ইন্টারপ্রিটেড ল্যাংগুয়েজ  </p>
+<div class=" px-5">
+    <h3 class="text-5xl font-normal m-2.5 capitalize">Javascript Basic</h3>
 
-        <p>জাভাস্ক্রিপ্ট আমরা তিনটি জায়গায় ব্যবহার করবো। </p>
-        <ol>
-            <li>কনসোলে</li>
-            <li>ভিএস কোড ইডিটরের কমান্ডপ্রম্ট এ</li>
-            <li>কোড পেন এ</li>
-        </ol>
-        <h3>Video-2->জাভাস্ক্রিপ্ট এ আমাদের কতটুকু ম্যাথ জানা লাগবে?</h3>
-        <ul>
-            <li>সংখ্যা সম্পর্কে ধারণা রাখতে হবে। পজিটিভ নেগেটিভ, পূর্ণসংখ্যা, অপূর্ণ সংখ্যা, দশমিক সংখ্যা, জোড় সংখ্যা  বেজোড় সংখ্যা ইত্যাদি।</li>
-            <li>ম্যাথের সাধারণ অপারেশনগুলো তথা যোগ, বিয়োগ, ভাগ, গুণ, ভাগশেষ, গড়, বড় সংখ্যা, ছোট সংখ্যা ধারা, ক্ষেত্রফল, প্রাইম নাম্বার, পারমুটেশন, কম্পিনেশন, গ্রাফ ইত্যাদি সম্পর্কে ধারণা রাখতে হবে। </li>
-        </ul>
-        <h3>Video-3->জাভাস্ক্রিপ্ট ভেরিয়েবল</h3>
-        <p>আমরা যখন কোনো জিনিস কোনো একটা পাত্রে রাখি তখন ঐ পাত্রে একটা নাম দিয়ে রাখি যাতে সহজেই সে জিনিসটা চিনতে পারা যায়।  এর  থেকেই ভেরিয়েবল এর ধারণাটা আসে।  প্রোগ্রামিং এর ক্ষেত্রে আমাদের বিভিন্ন তথ্য বা ডেটা স্টোর করে রাখতে হয়। সেগুলোকে আমরা একটা ভেরিয়েবল  এর মধ্যে রাখতে পারি। ভেরিএবল এর মানে হল কোনো একটা জিনিসের মান পরিবর্তন যোগ্য।</p>
-        <p>ভেরিএবল ডিক্লারেশন এর জন্য  পাঁচটি জিনিস লাগে।</p>
-        <ol>
-            <li>Dicleration keyword-> for Javascript var, let, const <br>
-                var-> value changable anywhere <br>
-                let-> value changable only outside block. that means it's value accessable in only block area <br>
-                const -> value can not be changable.
-            </li>
-            <li>Variable Name</li>
-            <li>Equal sign</li>
-            <li>value</li>
-            <li>semicolon -> optional for Javascript.</li>
-        </ol>
+    <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
+        
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট প্রাথমিক আলোচনা</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <p>পৃথিবীর একটি পাওয়ারফুল প্রোগ্রামিং ল্যাংগুয়েজ হল জাভাস্ক্রিপ্ট। আগে ওয়েবসাইটগুলো ছিল অনেকটা বইয়ের মতো। কিছু রিচার্সের কাজে ওয়েবসাইট ব্যবহার হলেও এর কোনো ইউজার ইন্টারএক্টিভিটি ছিল না। অর্থাৎ ইউজার ওয়েবসাইট শুধু  দেখতেই পারতো। ওয়েবসাইটে  কোনো কিছু পরিবর্তন বা তার  কোনো মতামত দিতে পারতো না। এরপর ডেভেলপাররা চিন্তা করলো কিভাবে ওয়েবসাইটগুলো সাধারন মানুষের আরো অনেক কাজ করার কাজে ব্যবহার করা যায়। এই চিন্তা থেকেই ব্রেন্ডন এইচ ১৯৯৫  সালে মাত্র ১০ দিনে জাভাস্ক্রিপ্ট তৈরি করেন। পরে ১৯৯৭ সালে এটিকে অফিসিয়াল স্ট্যান্ডার্ড একমাতে রেজিস্ট্রার্ড করে। আর এর অফিসিয়াল নাম হয়  একমা স্ক্রিপ্ট।</p>
+           
+        </div>     
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট ইউজ করার উপায়</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <p>আমরা এর আগে সিএসএস এর ব্যবহার শিখেছি। সিএসএস এর মতো জাভাস্ক্রিপ্ট ও ৩ ভাবে ব্যবহার করা যায়। </p>
+            <ol>
+                <li>ইনলাইন জাভাস্ক্রিপ্ট</li>
+                <li>স্ট্রিপ্ট ট্যাগের মাধ্যমে</li>
+                <li>এক্সটার্নাল সোর্স এর মাধ্যমে। এ ক্ষেত্রে স্ক্রিপ্ট ট্যাগের সোর্সে ফাইলের নাম লিখে দিতে হবে। </li>
+            </ol>
+            <p>জাভাস্ক্রিপ্ট  হাই লেভেল ল্যাংগুয়েজ।  যেসকল প্রোগ্রামিং ল্যাংগুয়েজ মানুষ ও কম্পিউটার উভয়েই কিছু কিছু বুঝতে পারে সেগুলোকে হাই লেভেল ল্যাংগুয়েজ। </p>
+            <p>জাভাস্ক্রিপ্ট  ইন্টারপ্রিটেড ল্যাংগুয়েজ  </p>
+    
+            <p>জাভাস্ক্রিপ্ট আমরা তিনটি জায়গায় ব্যবহার করবো। </p>
+            <ol>
+                <li>কনসোলে</li>
+                <li>ভিএস কোড ইডিটরের কমান্ডপ্রম্ট এ</li>
+                <li>কোড পেন এ</li>
+            </ol>
+           
+        </div>     
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট এর জন্য কতটুকু ম্যাথ জানা লাগবে?</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <ul>
+                <li>সংখ্যা সম্পর্কে ধারণা রাখতে হবে। পজিটিভ নেগেটিভ, পূর্ণসংখ্যা, অপূর্ণ সংখ্যা, দশমিক সংখ্যা, জোড় সংখ্যা  বেজোড় সংখ্যা ইত্যাদি।</li>
+                <li>ম্যাথের সাধারণ অপারেশনগুলো তথা যোগ, বিয়োগ, ভাগ, গুণ, ভাগশেষ, গড়, বড় সংখ্যা, ছোট সংখ্যা ধারা, ক্ষেত্রফল, প্রাইম নাম্বার, পারমুটেশন, কম্পিনেশন, গ্রাফ ইত্যাদি সম্পর্কে ধারণা রাখতে হবে। </li>
+            </ul>
+           
+        </div>     
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট ভেরিয়েবল</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <p>আমরা যখন কোনো জিনিস কোনো একটা পাত্রে রাখি তখন ঐ পাত্রে একটা নাম দিয়ে রাখি যাতে সহজেই সে জিনিসটা চিনতে পারা যায়।  এর  থেকেই ভেরিয়েবল এর ধারণাটা আসে।  প্রোগ্রামিং এর ক্ষেত্রে আমাদের বিভিন্ন তথ্য বা ডেটা স্টোর করে রাখতে হয়। সেগুলোকে আমরা একটা ভেরিয়েবল  এর মধ্যে রাখতে পারি। ভেরিএবল এর মানে হল কোনো একটা জিনিসের মান পরিবর্তন যোগ্য।</p>
+            <p>ভেরিএবল ডিক্লারেশন এর জন্য  পাঁচটি জিনিস লাগে।</p>
+            <ol>
+                <li>Dicleration keyword-> for Javascript var, let, const <br>
+                    var-> value changable anywhere <br>
+                    let-> value changable only outside block. that means it's value accessable in only block area <br>
+                    const -> value can not be changable.
+                </li>
+                <li>Variable Name</li>
+                <li>Equal sign</li>
+                <li>value</li>
+                <li>semicolon -> optional for Javascript.</li>
+            </ol>
+           
+        </div>     
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট ডেটা টাইপ</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <p>জাভাস্ক্রিপ্ট এ ৫ ধরণের ডেটা টাইপ আছে।</p>
+            <ol>
+                <li>Number-> Numirec value->1,2,3,...etc</li>
+                <li>String ->text value ->"Hello world"</li>
+                <li>Boolean-> true/false</li>
+                <li>Null-> Empty variable</li>
+                <li>Undefined-> Variable diclared, but still not assign value.</li>
+            </ol>
+    
+            <p>ভেরিএবল এর নামের আগে type of লিখে দিলে ভেরিএবল টাইপ পাওয়া  যাবে।</p>
+    
+           
+        </div>     
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট ভেরিএবল  ভ্যালু লেখার কিছু নিয়ম</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <ol>
+                <li>যদি নাম্বার টাইপ ভ্যালু হয় তাহলে শুধু নাম্বারটা লিখবো</li>
+                <li>যদি স্ট্রিং টাইপ ভ্যালু হয় তাহলে সিঙ্গেল বা ডাবল  কোটেশনের মধ্যে স্ট্রিং লিখবো। </li>
+                <li>বুলিয়ান টাইপ হলে শুধুমাত্র true/false </li>
+                
+            </ol>
+        </div>
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট ভেরিএবল  নাম লেখার কিছু নিয়ম</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <ol>
+                <li>কোনো কিওয়ার্ডকে নাম হিসেবে ব্যবহার করা যাবে না।</li>
+                <li>কোনো গ্যাপ বা স্পেস দেয়া যাবে না। আন্ডার স্কোর[স্নেক কেইজ] বা সবগুলো ওয়ার্ডের প্রথম অক্ষর বড় হাতের[প্যাসকাল কেজ] দেয়া যাবে, তবে জাভাস্ক্রিপ্টএ প্রথম ওয়ার্ডের প্রথম অক্ষর  ছোট হাতের,আর বাকী সবগুলোর প্রথম অক্ষর বড় হাতের দেয়া[ক্যামেল কেজ] রিকমান্ডেড।</li>
+                <li>কোনো কোটেশন  দেয়া যাবে না।</li>
+                <li>কিছু স্পেশাল ক্যারেকটার আছে যেগুলো ব্যবহার করা যাবে না।</li>
+                <li>নাম্বার দিয়ে শুরু করা যাবে না। তবে প্রথম লেটার বাদে অন্য যেকোনো জায়গায় দেয়া যাবে।</li>
+                <li>ভেরিয়েবল নাম  কেস সেনসিটিভ।</li>
+                
+            </ol>
+        </div>
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট এর কিছু কি ওয়ার্ড</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <table class="table-auto">
+                <tr>
+                    <td>abstract</td>
+                    <td>delete</td>
+                    <td>function</td>
+                    <td>null</td>
+                    <td>throw</td>
+                </tr>
+                <tr>
+                    <td>bookean</td>
+                    <td>do</td>
+                    <td>goto</td>
+                    <td>package</td>
+                    <td>throws</td>
+                </tr>
+                <tr>
+                    <td>break</td>
+                    <td>double</td>
+                    <td>if</td>
+                    <td>private</td>
+                    <td>transient</td>
+                </tr>
+                <tr>
+                    <td>byte</td>
+                    <td>else</td>
+                    <td>implements</td>
+                    <td>protected</td>
+                    <td>true</td>
+                </tr>
+                <tr>
+                    <td>case</td>
+                    <td>enum</td>
+                    <td>import</td>
+                    <td>public</td>
+                    <td>try</td>
+                </tr>
+                <tr>
+                    <td>catch</td>
+                    <td>exprot</td>
+                    <td>in</td>
+                    <td>return</td>
+                    <td>typeof</td>
+                </tr>
+                <tr>
+                    <td>char</td>
+                    <td>extends</td>
+                    <td>instanceof</td>
+                    <td>short</td>
+                    <td>var</td>
+                </tr>
+                <tr>
+                    <td>class</td>
+                    <td>false</td>
+                    <td>int</td>
+                    <td>static</td>
+                    <td>void</td>
+                </tr>
+                <tr>
+                    <td>const</td>
+                    <td>final</td>
+                    <td>interface</td>
+                    <td>super</td>
+                    <td>volatile</td>
+                </tr>
+                <tr>
+                    <td>continue</td>
+                    <td>finally</td>
+                    <td>long</td>
+                    <td>switch</td>
+                    <td>while</td>
+                </tr>
+                <tr>
+                    <td>debugger</td>
+                    <td>float</td>
+                    <td>native</td>
+                    <td>synchronized</td>
+                    <td>With</td>
+                </tr>
+                <tr>
+                    <td>default</td>
+                    <td>for</td>
+                    <td>new</td>
+                    <td>this</td>
+                    <td></td>
+                </tr>
+            </table>
+        
+        </div>
+    </div>
 
-        <h3>Video-4->জাভাস্ক্রিপ্ট ডেটা টাইপ</h3>
-        <p>জাভাস্ক্রিপ্ট এ ৫ ধরণের ডেটা টাইপ আছে।</p>
-        <ol>
-            <li>Number-> Numirec value->1,2,3,...etc</li>
-            <li>String ->text value ->"Hello world"</li>
-            <li>Boolean-> true/false</li>
-            <li>Null-> Empty variable</li>
-            <li>Undefined-> Variable diclared, but still not assign value.</li>
-        </ol>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট নাম্বার</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <p>নাম্বার সবসময় কোটেশন ছাড়া লিখতে হবে। কোটেশন দিলে নাম্বার ও স্ট্রিং হয়ে যায়। তবে জাভাস্ক্রিপ্টের কয়েকটি বিল্ডইন মেথডের মাধ্যমে নাম্বারে কনভার্ট করা যায়।  কোটেশন দেয়া নাম্বারের সাথে নাম্বার যোগ করলে তা স্ট্রিং হয়ে যায়। যেমন 20 + ‘20’ এটি 2020 হয়ে যাবে এবং এটি একটি স্ট্রিং। তবে বিযোগ, গুণ ভাগ করার ক্ষেত্রে সমস্যা হবে না। </p>
+            <p>Methods for converting string to number</p>
+            <ol>
+                <li>parseInt() -> to convert a string to a intiger value</li>
+                <li>parseFloat()-> to convert a string to a floating point value</li>
+                <li>toFixed(numberof Decimal)-> to fixed number in cartain decimal point value. but it convert number to string. so be carefull.</li>
+            </ol>
+        
+        </div>
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট অপারেটর</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <p>Javascript operators are--</p>
+            <ol>
+                <li>+ for addition</li>
+                <li>- for subtruction</li>
+                <li>* for multiplication</li>
+                <li>** for Exponentitation(Power)</li>
+                <li>/ for division</li>
+                <li>% for modulus(reminder)</li>
+                <li> let x=8; x%5;  return 3</li>
+            </ol>
 
-        <p>ভেরিএবল এর নামের আগে type of লিখে দিলে ভেরিএবল টাইপ পাওয়া  যাবে।</p>
+        
+        </div>
+    </div>
 
-        <h3>Video-5->জাভাস্ক্রিপ্ট ভেরিএবল  ভ্যালু লেখার কিছু নিয়ম</h3>
-        <ol>
-            <li>যদি নাম্বার টাইপ ভ্যালু হয় তাহলে শুধু নাম্বারটা লিখবো</li>
-            <li>যদি স্ট্রিং টাইপ ভ্যালু হয় তাহলে সিঙ্গেল বা ডাবল  কোটেশনের মধ্যে স্ট্রিং লিখবো। </li>
-            <li>বুলিয়ান টাইপ হলে শুধুমাত্র true/false </li>
-            
-        </ol>
-        <h3>Video-5->জাভাস্ক্রিপ্ট ভেরিএবল  নাম লেখার কিছু নিয়ম</h3>
-        <ol>
-            <li>কোনো কিওয়ার্ডকে নাম হিসেবে ব্যবহার করা যাবে না।</li>
-            <li>কোনো গ্যাপ বা স্পেস দেয়া যাবে না। আন্ডার স্কোর[স্নেক কেইজ] বা সবগুলো ওয়ার্ডের প্রথম অক্ষর বড় হাতের[প্যাসকাল কেজ] দেয়া যাবে, তবে জাভাস্ক্রিপ্টএ প্রথম ওয়ার্ডের প্রথম অক্ষর  ছোট হাতের,আর বাকী সবগুলোর প্রথম অক্ষর বড় হাতের দেয়া[ক্যামেল কেজ] রিকমান্ডেড।</li>
-            <li>কোনো কোটেশন  দেয়া যাবে না।</li>
-            <li>কিছু স্পেশাল ক্যারেকটার আছে যেগুলো ব্যবহার করা যাবে না।</li>
-            <li>নাম্বার দিয়ে শুরু করা যাবে না। তবে প্রথম লেটার বাদে অন্য যেকোনো জায়গায় দেয়া যাবে।</li>
-            <li>ভেরিয়েবল নাম  কেস সেনসিটিভ।</li>
-            
-        </ol>
-
-        <h3>Video-5->জাভাস্ক্রিপ্ট এর কিছু কি ওয়ার্ড</h3>
-        <table>
-            <tr>
-                <td>abstract</td>
-                <td>delete</td>
-                <td>function</td>
-                <td>null</td>
-                <td>throw</td>
-            </tr>
-            <tr>
-                <td>bookean</td>
-                <td>do</td>
-                <td>goto</td>
-                <td>package</td>
-                <td>throws</td>
-            </tr>
-            <tr>
-                <td>break</td>
-                <td>double</td>
-                <td>if</td>
-                <td>private</td>
-                <td>transient</td>
-            </tr>
-            <tr>
-                <td>byte</td>
-                <td>else</td>
-                <td>implements</td>
-                <td>protected</td>
-                <td>true</td>
-            </tr>
-            <tr>
-                <td>case</td>
-                <td>enum</td>
-                <td>import</td>
-                <td>public</td>
-                <td>try</td>
-            </tr>
-            <tr>
-                <td>catch</td>
-                <td>exprot</td>
-                <td>in</td>
-                <td>return</td>
-                <td>typeof</td>
-            </tr>
-            <tr>
-                <td>char</td>
-                <td>extends</td>
-                <td>instanceof</td>
-                <td>short</td>
-                <td>var</td>
-            </tr>
-            <tr>
-                <td>class</td>
-                <td>false</td>
-                <td>int</td>
-                <td>static</td>
-                <td>void</td>
-            </tr>
-            <tr>
-                <td>const</td>
-                <td>final</td>
-                <td>interface</td>
-                <td>super</td>
-                <td>volatile</td>
-            </tr>
-            <tr>
-                <td>continue</td>
-                <td>finally</td>
-                <td>long</td>
-                <td>switch</td>
-                <td>while</td>
-            </tr>
-            <tr>
-                <td>debugger</td>
-                <td>float</td>
-                <td>native</td>
-                <td>synchronized</td>
-                <td>With</td>
-            </tr>
-            <tr>
-                <td>default</td>
-                <td>for</td>
-                <td>new</td>
-                <td>this</td>
-                <td></td>
-            </tr>
-        </table>
-
-        <h3>Video-6->জাভাস্ক্রিপ্ট নাম্বার</h3>
-        <p>নাম্বার সবসময় কোটেশন ছাড়া লিখতে হবে। কোটেশন দিলে নাম্বার ও স্ট্রিং হয়ে যায়। তবে জাভাস্ক্রিপ্টের কয়েকটি বিল্ডইন মেথডের মাধ্যমে নাম্বারে কনভার্ট করা যায়।  কোটেশন দেয়া নাম্বারের সাথে নাম্বার যোগ করলে তা স্ট্রিং হয়ে যায়। যেমন 20 + ‘20’ এটি 2020 হয়ে যাবে এবং এটি একটি স্ট্রিং। তবে বিযোগ, গুণ ভাগ করার ক্ষেত্রে সমস্যা হবে না। </p>
-        <p>Methods for converting string to number</p>
-        <ol>
-            <li>parseInt() -> to convert a string to a intiger value</li>
-            <li>parseFloat()-> to convert a string to a floating point value</li>
-            <li>toFixed(numberof Decimal)-> to fixed number in cartain decimal point value. but it convert number to string. so be carefull.</li>
-        </ol>
-        <h3>Video-7->জাভাস্ক্রিপ্ট অপারেটর</h3>
-        <p>Javascript operators are--</p>
-        <ol>
-            <li>+ for addition</li>
-            <li>- for subtruction</li>
-            <li>* for multiplication</li>
-            <li>** for Exponentitation(Power)</li>
-            <li>/ for division</li>
-            <li>% for modulus(reminder)</li>
-            <li> let x=8; x%5;  return 3</li>
-        </ol>
-        <h3>Video-7->জাভাস্ক্রিপ্ট অপারেটর শর্টহ্যান্ড</h3>
-        <ol>  
-            <li> let x = 5; x+=3 console.log(x); return 8</li>
-            <li> let x = 5; x-=3 console.log(x); return 2</li>
-            <li> let x = 5; x*=3 console.log(x); return 15</li>
-            <li> let x = 5; x/=3 console.log(x); return 1.666666666666667</li>
-        </ol>
-    </section>
-</article>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">জাভাস্ক্রিপ্ট অপারেটর শর্টহ্যান্ড</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5 text-justify">
+            <ol>  
+                <li> let x = 5; x+=3 console.log(x); return 8</li>
+                <li> let x = 5; x-=3 console.log(x); return 2</li>
+                <li> let x = 5; x*=3 console.log(x); return 15</li>
+                <li> let x = 5; x/=3 console.log(x); return 1.666666666666667</li>
+            </ol>
+        
+        </div>
+    </div>
 
 
+</div>
+
+</div>
