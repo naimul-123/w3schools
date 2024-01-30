@@ -1,0 +1,109 @@
+<div class=" px-5">
+        <h3 class="text-5xl font-normal m-2.5 capitalize">Javascript Object</h3>
+    <div>
+        <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
+            
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">Object:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>Object হল non-primitive ডেটা টাইপ। প্রায় সব প্রোগ্রামিং ল্যাংগুয়েজেই অবজেক্ট আছে। </p>
+                <p>We can define object thus: An unordered collection of key-value pairs. Each key-value pair is called a property.</p>
+
+                <p>নিচে Object এর কিছু বৈশিষ্ট দেয়া হল:</p>
+                <ol class="list-decimal pl-8">
+                    <li>Object সাধারণত const দিয়ে ডিক্লেয়ার করা হয়। </li>
+                    <li>Object  কার্লি ব্রেস {} এর মধ্যে লেখা হয়।</li>
+                    <li>Object এ একটি property ও একটি value দিয়ে ডেটা স্টোর করা হয়।</li>
+                    <li>Object এর মধ্যে সব ধরণের ডেটা টাইপ তথা string, number, boolean, null, undefined, array এমনকি object ও ভ্যালু হিসেবে স্টোর করা যায়।</li>
+                    <li>Difference between object and array : <ul class="list-disc pl-4">
+                        <li>Array stores data in ordered(sequential) collection but Object stores data in unordered collection.</li>
+                        <li>Data can be accessed in array using numerical index. for object, values are accessed calling keys.</li>
+                        <li></li>
+                    </ul> </li>
+                </ol>
+            </div>     
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">Object Declaretion:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>Object কে নিম্নোক্ত ভাবে declare করা যায়। </p>
+                
+                <ol class="list-decimal pl-8">
+                    <li> Using an object literal. const objectName = {key:value, key:value.....} </li>
+                    <li> Using new keyword const objectName = new Object(key:value, key:value.....)</li>
+                    <li> Using Obeect.create const objectName = Object.create(key:value, key:value.....)</li>
+                    <li>Using class or function-- Define an object constructor. then create objects of the constructed type. </li>
+                </ol>
+            </div>     
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">Object Properties:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p> Object এর কোনো একটি property এর ভ্যালু এক্সেস করতে বা নতুন ভাবে সেট করতে dot notation ও bracket notation ব্যবহার করা হয়।</p>
+                <ol class="list-decimal pl-8">
+                    <li>with dot notation -> objectName.propertyName</li>
+                    <li>with bracket notation -> objectName[propertyName] এক্ষেত্রে property name কে একটি স্ট্রিং হিসেবে লিখতে হবে। অর্থাৎ সিঙ্গেল বা ডাবল কোটেশনের মধ্যে লিখতে হবে।  </li>
+                    <li>কোনো একটি ভেরিএবল এর ভ্যালু হিসেবে property এর নামকে সেট করে তারপর সেই ভেরিএবলকে bracket notation এর মধ্যে বসিয়ে দিয়েও property এর ভ্যালু এক্সেস করা যায়। </li>
+                </ol>
+                <p>তবে propertyName একাধিক ওয়ার্ডে হয় বা _, বা এরকম কিছু স্পেশাল কী দিয়ে শুরু হলে dot notation দিয়ে property এর ভ্যালু এক্সেস বা সেট করা যায় না। সেক্ষেত্রে bracket notation হল একমাত্র সমাধান।</p>
+
+            </div>
+
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal">Keys, Values, nested objects and delete</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <ol class="list-decimal pl-8">
+                    <li>কোনো একটি Object এ কতগুলো কী বা প্রপার্টি আছে তা দেখতে চাইলে Object.keys(ObjectName) returns an array with object property Name.</li>
+                    <li>কোনো একটি Object এর যতগুলো ভ্যালু আছে তা বের করতে চাইলে Object.values(ObjectName) returns an array with object values.</li>
+                    <li>nested object এর value বের করতে যতবার নেস্টেড ততবার  dot notation বা bracket notation ও প্রপার্টি নেম দিতে হবে।</li>
+                    <li>object এর কোন প্রপার্টি ডিলিট করতে চাইলে delete objectName.propertyName দিতে হবে।</li>
+
+                </ol>
+
+                
+            </div>
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">Loop object and ways to declare an object:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>Object কে বিভিন্ন ভাবে loop করা যায়।</p>
+                <ol class="list-decimal pl-8">
+                    <li>for in loop দিয়ে এভাবে করতে পারি। <br>
+                        const myObject={<br>
+                            name: "Naimul Islam",<br>
+                            age: 35,<br>
+                            waight: 70,<br>
+                            height: 63<br>
+                        }; <br>
+                        
+                        for(const prop in myObject){<br>
+                            console.log(prop); // returns property names of the object<br>
+                            console.log(myObject[prop]); // returns property values of the object<br>
+                        }<br>
+                        
+                        console.log(reverseName);<br>
+                    </li>
+                    <li>for of loop দিয়ে এভাবে করতে পারি। <br>
+                        const myObject={<br>
+                            name: "Naimul Islam",<br>
+                            age: 35,<br>
+                            waight: 70,<br>
+                            height: 63<br>
+                            };<br>
+                    
+                            const keys = Object.keys(myObject);<br>
+                            console.log(keys);<br>
+                            for(key of keys){<br>
+                                console.log(myObject[key]);<br>
+                            }<br>
+                    
+                    </li>
+                </ol>
+            </div>
+        </div>
+    
+    </div>
+   
+    </div>
+</div>

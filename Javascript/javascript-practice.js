@@ -105,7 +105,39 @@
 // }
 
 // for loop
-for(let num = 1; num<=10; num++){
+// for(let num = 1; num<=10; num++){
 
-    console.log(num)
-}
+//     console.log(num)
+// }
+
+// sum of array elements with for loop
+// const numbers = [15,25,24,28,32];
+// let sum=0;
+// for (let i = 0; i<numbers.length; i++){
+//     const number = numbers[i];
+//     sum +=number;
+// }
+
+// console.log(sum);
+        const myName="Naimul Islam";
+        // let reverseName = ''
+        // for(let i = 0; i< myName.length; i++ ){
+        //     const letter= myName[i]
+        //     reverseName= letter + reverseName;
+        // }
+
+        // console.log(reverseName)
+
+    //    console.log(myName.split('').reverse().join(''));
+    const myObject={
+        name: "Naimul Islam",
+        age: 35,
+        waight: 70,
+        height: 63
+        };
+
+        const keys = Object.keys(myObject)
+        console.log(keys)
+        for(key of keys){
+            console.log(myObject[key])
+        }

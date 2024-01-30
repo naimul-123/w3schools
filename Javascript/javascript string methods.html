@@ -1,0 +1,86 @@
+<div class=" px-5">
+        <h3 class="text-5xl font-normal m-2.5 capitalize">Javascript String Method</h3>
+    <div>
+        <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
+            
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">String:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>String এক ধরণের ডেটা। যা কোটেশন মার্ক বা ডাবল কোটেশন মার্ক দিয়ে লেখা হয়। </p>
+                <p>নিম্নোক্ত উপায়ে String Dicleration করা যায়।</p>
+                <ol class="list-decimal pl-8">
+                    <li>with single or double quotaition mark -- 'Rahim' or "Rahim" </li>
+                    <li>With back tick --`My string`</li>
+                    <li>With new keyword --new String("My string")  এ ক্ষেত্রে string টি একটি object হয়ে যায়।</li>
+                    <li>Array এর মতো string এ length method ব্যবহার করা যায়। string.length-> string এর length রিটার্ন করবে। এক্ষেত্রে white space ও কাউন্ট হবে। </li>
+                    <li>Array এর মতো string এ ও index দিয়ে ‍string এর পজিশনভ্যালু  বের করা যায়। ‍string[0] -> string এর ফার্স্ট পজিশনের ভ্যালু রিটার্ন করবে। তবে পার্থক্য হল  array এর index দিয়ে যেভাবে ভ্যালুকে পরিবর্তন করা যায়, এখানে সেভাবে পরিবর্তন করা যায় না। এজন্য বলা হয় string is immutable.</li>
+                </ol>
+            </div>     
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">String Comparision lowercase, uppercase and trim:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <ol class="list-decimal pl-8">
+
+                    <li>string.toLowerCase() -> return lowercase value</li>
+                    <li>string.toUpperCase() -> return uppercase value</li>
+                    <li>string.trim() -> to remove white space from string</li>
+                    <li>string.trimStart() -> to remove white space from start position of string</li>
+                    <li>string.trimEnd() -> to remove white space from End position of string</li>
+                </ol>
+            </div>
+
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal">String slice, Join, Concat and Includes</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <ol class="list-decimal pl-8">
+                    <li>string.slice(indexStart, indexEnd) -> slice দিয়ে array এর মতো string এ ও কাজ করা যায়। আমাদের ‍যদি কোনো string এর কোনো আংশিক পার্ট দরকার হয় তখন আমরা slice মেথডটি ব্যবহার করতে পারি। এক্ষেত্রে প্রথম ইনডেক্স থেকে শুরু হয়ে শেষ ইন্ডেক্স এর আগ পর্যন্ত অংশ আমাদেরকে রিটার্ন করবে। ‍slice এর কাছাকাছি হল substring()</li>
+                    <li>string.split(' separator ') -> return an array with separated values of string based on separator.</li>
+                    <li>split এর বিপরীত হল join . string কে ‍ split করে একটি array পাওয়া যায়, আবার array কে string এ convert করতে array.join('separator') এভাবে করে একটি string পাওয়া যাবে।</li>
+                    <li>string1.concat(string2, string3).concat(string4) ->to concat string1, string2, string3 and string4 </li>
+                    <li>string.includes("value") returns true if string contains value, returns false if not contains</li>
+                </ol>
+
+                
+            </div>
+        </div>
+        <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+            <h3 class="my-2.5 text-2xl font-normal">Reverse string:</h3>
+            <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+                <p>String কে বিভিন্ন ভাবে reverse করা যায়।</p>
+                <ol class="list-decimal pl-8">
+                    <li>for of loop দিয়ে এভাবে করতে পারি। <br>
+                        const myName="Naimul Islam"; <br>
+                        let reverseName = '';<br>
+                        for(const letter of myName){<br>
+                            reverseName= letter + reverseName;<br>
+                        }<br>
+                        
+                        console.log(reverseName);<br>
+                    </li>
+                    <li>for loop দিয়েও করতে পারি। <br>
+                        const myName="Naimul Islam";<br>
+                        let reverseName = '';<br>
+                        for(let i = 0; i&lt; myName.length; i++ ){<br>
+                            const letter= myName[i];<br>
+                            reverseName= letter + reverseName;<br>
+                        }<br>
+                
+                        console.log(reverseName)
+                    </li>
+                    <li>আবার চাইলে string.split('').reverse().join('') এভাবে ও করতে পারি। <br>
+                        console.log(myName.split('').reverse().join(''));
+                    </li>
+                </ol>
+                <p class="pl-6">
+                    
+                </p>
+            
+            </div>
+        </div>
+    
+    </div>
+   
+    </div>
+</div>
