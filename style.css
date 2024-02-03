@@ -30,14 +30,14 @@ td, th{
 
 }
 .active{
-    background-color: #04AA6D!important;
+    background-color: #9522E1!important;
     color: white;
 }
 .listItem:hover{
-    background-color:#cccccc ;
+    background-color:#e7d0f7 ;
 }
 .active:hover{
-    background-color: #048656 !important;
+    background-color: #8b05e3 !important;
     color: white !important;
 }
 .listItem{

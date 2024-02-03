@@ -1,29 +1,79 @@
-<article class="article">
-    <header class="articleHeader">
-        <h3>Javascript Array</h3>
-    </header>
-    <section>
-        <p>Array এক ধরণের কন্টেইনার যা একাধিক ভ্যালু স্টোর করতে পারে। </p>
-        <p>Array Syntax <br>
-        const arrayName =[value1, value2, value3, .........]
+<div class=" px-5">
+    <h3 class="text-5xl font-normal m-2.5 capitalize">Javascript Array</h3>
+<div>
+    <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
+        
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">What is array:</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+            <p>Array এক ধরণের কন্টেইনার যা একাধিক ভ্যালু স্টোর করতে পারে। </p>
+            <p>Array Syntax <br>
+            const arrayName =[value1, value2, value3, .........]
+            </p>
+            <p>Array Index 0 থেকে শুরু হয়. index দিয়ে  এরের নির্দিষ্ট  ইন্ডেক্সের ইলিমেন্টের ভ্যালু পাওয়া যাবে। আবার ইনডেক্স দিয়ে সেই ইনডেক্সের ভ্যালু  সেট করা ও যায়।</p>    
+
+        </div>     
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">Array Methods:</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+            <ol class="list-decimal pl-8">
+                <li>array.length -> to find how meny elements have in the array</li>
+                <li>array.includes(value) if an array contains the value than return true else return false</li>     
+                <li>array.indexOf(40)--to find index number of an array first same elements. it returns only first element's index if duplicate value contain. যদি  ভ্যালু না থাকে তাহলে -1 রিটার্ন করবে।</li>
+                <li>Array.isArray(arrayName) --return true if arrayName is an array else return false.</li>
+                <li>array.join('seperator') to join elements of an array with seperator</li>
+                <li>array.conact(array2) return a new array with concatinated two array.</li>
+                <li>array.push(newValue1, newValue2, newValue3.... )- to add new values to the last of array</li>
+                <li>array.pop() --to delete the last element of an array returns deleted value.</li>
+                <li>array.shift() -- to delete the first element of an array returns deleted value.</li>
+                <li>array.unshift(newValue1, newValue2, newValue3, .....) -- to add new values to the first of an array. </li>
+                <li>array.length-1  -- to find last element index of an array</li>
+                <li>array.slice(indexStart, indexEnd) return a new array প্রথম ইনডেক্স থেকে শুরু হবে কিন্তু লাস্ট ইন্ডেক্সের আগ পর্যন্ত নিবে।</li>
+                <li>array.splice(startIndex, deleteCount,  newElement1, newElement2 ...) to delete some value and add new value.</li>
+                
+                                                                           
+            </ol>
+        </div>     
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">Array Loop:</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+            <p>আমরা এর আগে জেনে আসছিলাম, for of loop এরেতে ব্যবহার হয়। for of loop ছাড়াও আরো কয়েকভাবে array এর মধ্যে loop করা যায়। তবে বিভিন্ন কাজের সুবিধার্থে আমাদেরকে array এর index কে ও দরকার হবে। সেক্ষেত্রে for of loop দিয়ে আমাদের কাজ হবে না। for loop দিয়ে কাজ চালানো গেলেও অনেক কোড বেশি লিখতে হয়। এজন্য array এর কয়েকটি বিল্ডইন লুপ মেথড আছে।</p>
+        </div>
+
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal">Array Reverse</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+            <p>Array কে বিভিন্ন ভাবে reverse করা যায়। যথা:-</p>
+            <ol class="list-decimal pl-8">
+                <li>array.reverse() method এর মাধ্যমে।</li>
+                <li>loop এর মধ্যে  array.unshift দিয়ে</li>
+                <li>loop কে  উল্টো ভাবে চালিয়ে array.push মেথডের মাধ্যমে</li>
+            </ol>
+            
+
+            
+        </div>
+    </div>
+    <div class="bg-[#E7E9EB] p-4 space-y-3 shadow-md rounded-lg h-[450px]">
+        <h3 class="my-2.5 text-2xl font-normal">Sort an array:</h3>
+        <div class="border-l-4 border-[#04AA6D] bg-white px-3 py-8 overflow-auto h-4/5">
+            <p>Sort দুই ভাবে হয়। <ol class="list-decimal pl-8">
+                <li>Ascending order. Ex: a,b,c,d...</li>
+                <li>Descending order. Ex: z,y,x...</li>
+            </ol>
+            array.sort() মেথড দিয়ে এটা করা যায়। তবে javascript alphabetical order এ শর্ট করে তাই এভাবে number কে ‍sort করা যায় না। number কে ‍sort করতে হলে sort method এর মধ্যে একটি callback Function নিতে হবে। যেটা এই প্রবলেমকে ফিক্সড করবে। Ascending করতে হলে-- ‍<br>
+              array.sort((a,b)=> {return a-b}); <br>
+              Descending করতে হলে-- ‍<br>
+              array.sort((a,b)=> {return b-a}); <br>
         </p>
-        <p>Array Index 0 থেকে শুরু হয়. index দিয়ে  এরের নির্দিষ্ট  ইন্ডেক্সের ইলিমেন্টের ভ্যালু পাওয়া যাবে। আবার ইনডেক্স দিয়ে সেই ইনডেক্সের ভ্যালু  সেট করা ও যায়।</p>
-        <p>Array methods</p>
-        <ol>
-            <li>array.length -> to find how meny elements have in the array</li>
-            <li>array.includes(value) if an array contains the value than return true else return false</li>     
-            <li>array.indexOf(40)--to find index number of an array first same elements. it returns only first element's index if duplicate value contain. যদি  ভ্যালু না থাকে তাহলে -1 রিটার্ন করবে।</li>
-            <li>Array.isArray(arrayName) --return true if arrayName is an array else return false.</li>
-            <li>array.join('seperator') to join elements of an array with seperator</li>
-            <li>array.conact(array2) return a new array with concatinated two array.</li>
-            <li>array.push(newValue1, newValue2, newValue3.... )- to add new values to the last of array</li>
-            <li>array.pop() --to delete the last element of an array returns deleted value.</li>
-            <li>array.shift() -- to delete the first element of an array returns deleted value.</li>
-            <li>array.unshift(newValue1, newValue2, newValue3, .....) -- to add new values to the first of an array. </li>
-            <li>array.length-1  -- to find last element index of an array</li>
-            <li>array.slice(indexStart, indexEnd) return a new array প্রথম ইনডেক্স থেকে শুরু হবে কিন্তু লাস্ট ইন্ডেক্সের আগ পর্যন্ত নিবে।</li>
-            <li>array.splice(startIndex, deleteCount,  newElement1, newElement2 ...) to delete some value and add new value.</li>
-                                                                       
-        </ol>
-    </section>
-</article>
+
+        </div>
+    </div>
+
+</div>
+
+</div>
+</div>

@@ -1,0 +1,88 @@
+<div class=" px-5">
+    <h3 class="text-5xl font-normal m-2.5 capitalize">Javascript </h3>
+<div>
+    <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
+        
+        <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal text-[white]">What is function?:</h3>
+            <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+                <p>Function is a block of code that received one or more input value that called parametter and returns a value based on parametter/parametters</p>
+            <p>ঘরের ছোট ছেলেকে যেমন সবাই যখন তখন যেকোনো কাজ করতে বলে তেমনি ফাংশন দিয়ে আমরা যখন তখন যেকোনো কাজ করিয়ে নিতে পারি।</p>
+            <p>Function এর একটি সুপার পাওয়ার আছে আর যেটা হল ফাংশন এর প্যারামিটারে ভ্যালু বসিয়ে বিভিন্ন ভ্যালু দিয়ে ফাংশনে বিভিন্ন রেজাল্ট পাওয়া যায়।
+            </p>
+        </div>     
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Function parameter:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+           <p>এই মানগুলোর উপর ভিত্তি করে function আউটপুট দেয় সেগুলোকে Function parametter বলে। Function parametter,  function  এর first bracket এর মধ্যে কমা দিয়ে দিয়ে দিতে হয়। Function parametter এক বা একাধিক হতে পারে। তবে যতগুলো প্যারামিটার দেয়া হবে। Function parametter কোনো একটি ভ্যালু বা ভ্যারিয়েবলের মান যে কোন একটি হতে পারে।  </p>
+            <ol class="list-decimal pl-8">
+            </ol>
+        </div>     
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Return of function:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p class="pl-8">
+                exampel: <br>
+                const add = (num1, num2)=>{ <br>
+                    const result = num1+num2;<br>
+                    return result;<br>
+                }<br>
+            const sum = add(25, 20)<br>
+               
+                console.log(sum);<br>
+            
+            </p>
+            <p>প্রসঙ্গত উল্লেখ্য, function এর শুধুমাত্র একটিই রিটার্ন হতে পারে। সেটা হতে পারে যেকোনো ভ্যালু তথা number, string, boolean, array, object etc.</p>
+
+        </div>
+
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Recap and Conditional Return:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>আমরা চাইলে function এ কোনো কন্ডিশন দিয়ে ও কোনো ভ্যালু return করতে পারি। যেমন: <br>
+                // return a value with condition <br>
+
+                const isEven = (num)=>{<br>
+                    if (num %2 === 0){<br>
+                        return true;<br>
+                    }<br>
+                    else{<br>
+                        return false;<br>
+                    }<br>
+                }<br>
+                
+                console.log(isEven(24));//returns true<br>
+            </p>
+
+            
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Different types of parameters:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>Function এর parameters যেকোনো ডেটা টাইপ তথা number, string, boolean, array and object  হতে পারে।</p>
+            <p> Example of array as parameter of a function: <br>
+                const numbers = [1,2,3,4,5,6];<br>
+                const sum = (array)=>{<br>
+                    let result = 0;<br>
+                    for (n of array){<br>
+                        result = result+n<br>
+                    }<br>
+                    return result<br>
+                }<br>
+        
+                const total = sum(numbers);<br>
+                console.log(total)<br>
+            </p>
+            
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+</div>

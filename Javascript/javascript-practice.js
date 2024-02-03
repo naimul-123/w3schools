@@ -119,7 +119,7 @@
 // }
 
 // console.log(sum);
-        const myName="Naimul Islam";
+        // const myName="Naimul Islam";
         // let reverseName = ''
         // for(let i = 0; i< myName.length; i++ ){
         //     const letter= myName[i]
@@ -129,15 +129,75 @@
         // console.log(reverseName)
 
     //    console.log(myName.split('').reverse().join(''));
-    const myObject={
-        name: "Naimul Islam",
-        age: 35,
-        waight: 70,
-        height: 63
-        };
+    // const myObject={
+    //     name: "Naimul Islam",
+    //     age: 35,
+    //     waight: 70,
+    //     height: 63
+    //     };
 
-        const keys = Object.keys(myObject)
-        console.log(keys)
-        for(key of keys){
-            console.log(myObject[key])
+    //     const keys = Object.keys(myObject)
+    //     console.log(keys)
+    //     for(key of keys){
+    //         console.log(myObject[key])
+    //     }
+
+    // sort number array with ascending order
+    // const numbers = [15,25,24,28,32, 3, 4];
+    // // sort numbers array with ascending order
+    // console.log(numbers.sort((a,b)=> a-b));
+    //     // sort numbers array with descending order
+    //     console.log(numbers.sort((a,b)=> b-a));
+    // const statement = 'I am a hard working person'
+    // const statArray = statement.split(" ");
+    // // console.log(stat_array)
+    // const reverseStatement = statArray.reverse();
+    // console.log(reverseStatement);
+
+    // return a value to function
+
+//     const add = (num1, num2)=>{
+//         const result = num1+num2;
+//         return result;
+//     }
+// const sum = add(25, 20)
+   
+//     console.log(sum);
+
+// return a value with condition
+
+// const isEven = (num)=>{
+//     if (num %2 === 0){
+//         return true;
+//     }
+//     else{
+//         return false;
+//     }
+// }
+
+// console.log(isEven(24));//returns true
+
+        const numbers = [1,2,3,4,5,6];
+        const sortNumbers = (array)=>{
+            let evenNum= [];
+            let oddNum =[];
+            const arrangedNum = {
+                even:[],
+                odd:[]
+            }
+            for (n of array){
+                if (n%2 ===0){
+                //    evenNum.unshift(n)
+                   evenNum.push(n) 
+                }
+
+                else{
+                    oddNum.push(n)
+                }
+            }
+            arrangedNum.even = evenNum;
+            arrangedNum.odd=oddNum;
+
+            return arrangedNum
         }
+        console.log(sortNumbers(numbers));
