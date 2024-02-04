@@ -7,7 +7,7 @@ css:[
 'rules', 'css -3 Features', 'transform', 'animation','resources'
 ],
 git:[],
-Javascript:[ 'javascript basic', 'javascript conditional', 'javascript array', 'javascript loop', 'javascript string methods', 'javascript object', 'javascript function']
+Javascript:[ 'javascript basic', 'javascript conditional', 'javascript array', 'javascript loop', 'javascript string methods', 'javascript object', 'javascript function', 'Some BultIn Objects']
 
 }
 

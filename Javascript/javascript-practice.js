@@ -177,27 +177,194 @@
 
 // console.log(isEven(24));//returns true
 
-        const numbers = [1,2,3,4,5,6];
-        const sortNumbers = (array)=>{
-            let evenNum= [];
-            let oddNum =[];
-            const arrangedNum = {
-                even:[],
-                odd:[]
-            }
-            for (n of array){
-                if (n%2 ===0){
-                //    evenNum.unshift(n)
-                   evenNum.push(n) 
-                }
+        // const numbers = [1,2,3,4,5,6];
+        // const sortNumbers = (array)=>{
+        //     let evenNum= [];
+        //     let oddNum =[];
+        //     const arrangedNum = {
+        //         even:[],
+        //         odd:[]
+        //     }
+        //     for (n of array){
+        //         if (n%2 ===0){
+        //         //    evenNum.unshift(n)
+        //            evenNum.push(n) 
+        //         }
 
-                else{
-                    oddNum.push(n)
-                }
-            }
-            arrangedNum.even = evenNum;
-            arrangedNum.odd=oddNum;
+        //         else{
+        //             oddNum.push(n)
+        //         }
+        //     }
+        //     arrangedNum.even = evenNum;
+        //     arrangedNum.odd=oddNum;
 
-            return arrangedNum
+        //     return arrangedNum
+        // }
+        // console.log(sortNumbers(numbers));
+
+        // // task-3 make agerage
+        // const numbers = [1,5,8,4,3,7,9,12];
+        // function makeAvg(array){
+        //     const size= array.length;
+        //     let sum = 0;
+        //     for(n of array){
+        //         sum = n+sum;
+        //     }
+        //     const avg = sum/size;
+        //     return avg;
+        // }
+
+        // console.log(makeAvg(numbers));
+        // count zero in a string;
+
+        // const binaryString = '10001010100'
+
+        // function countZero(str){
+        //     let count = 0;
+        //     for (n of str){
+        //         if(n==="0"){
+        //             count++
+        //         }
+                
+        //     }
+        //     return count
+        // }
+
+        // console.log(countZero(binaryString))
+
+        // task -5
+        // function oddEven(number){
+        //     if(number%2 ===0){
+        //         return "Even";
+        //     }
+        //     else{
+        //         return "Odd";
+        //     }
+        // }
+
+        // console.log(oddEven(25));
+        // console.log(oddEven(22));
+
+        // converter inch to feet
+        // function inchToFeet(inch){
+           
+        //         const feet = `${(inch/12).toFixed(0) }'${inch%12}"`
+        //         return feet
+           
+        // }
+
+        // console.log(inchToFeet(5));
+
+        //isleapyear function
+        // function isleapyear(year){
+        //     let result;
+        //     if(year % 100!==0 && year%4 === 0){   
+        //             result= `This year is a leap year`;
+        //     }
+        //     else if (year%400 ===0){
+        //         result =`This year is a leap year` 
+        //     }
+        //     else{
+        //         result =`This year is not a leap year` 
+        //     }
+
+        //     return result;
+
+        // }
+
+        // console.log(isleapyear(1902));
+
+        // ‍return average of odd numbers of an array
+
+        // const numbers =[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+
+        // function oddAvg(array){
+        //     let count=0;
+        //     let sum = 0;
+        //     for (n of array){
+        //         if(n%2!==0){
+        //             count++;
+        //             sum+=n;
+        //         }
+        //     }
+
+        //     const avg= sum/count;
+        //     return avg;
+        // }
+
+        // console.log(oddAvg(numbers));
+
+        // another way
+        // let oddNumber=[];
+        // function oddAvg(array){
+        //     for(n of array){
+        //         if(n%2 ===1){
+        //             oddNumber.push(n);
+        //         }
+        //     }
+        //     let sum = 0;
+        //     for(n of oddNumber){
+        //         sum+=n;
+        //     }
+        //     avg = sum/ oddNumber.length;
+        //     console.log(avg)
+        // }
+
+        // oddAvg(numbers);
+
+        // remove repeat item from an array with a function;
+
+        // const numbers = [1,5,7,6,8,5,6,2,5];
+        // function removeRepeat(array){
+        //     let newArray = [];
+        //     for (n of array){
+        //         if(!(newArray.includes(n))){
+        //             newArray.push(n);
+        //         }
+        //     }
+
+        //     return newArray;
+        // }
+
+        // console.log(removeRepeat(numbers));
+        // Math.ceil
+
+        // const phones = [
+        //     { model: "PhoneA", brand: "Iphone", price: 95000 },
+        //     { model: "PhoneB", brand: "Samsung", price: 40000 },
+        //     { model: "PhoneC", brand: "Oppo", price: 26000 },
+        //     { model: "PhoneD", brand: "Nokia", price: 35000 },
+        //     { model: "PhoneE", brand: "Iphone", price: 105000 },
+        //     { model: "PhoneF", brand: "HTC", price: 48000 },
+        // ];
+
+        // function averageValue(array){
+        //     let total= 0;
+
+        //     for(n of array){
+        //         total+=n.price;
+        //     }
+
+        //     avg = total/array.length;
+        //     return avg;
+        // }
+
+        // console.log(averageValue(phones));
+
+        const employees = [
+            { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+            { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+            { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+            { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
+        ];
+
+        function totalSalary(array){
+            let total= 0;
+            for(n of array){
+                total= (n.experience*n.increment)+ n.starting+total
+            }
+
+            return total
         }
-        console.log(sortNumbers(numbers));
+
+        console.log(totalSalary(employees))

@@ -1,41 +1,51 @@
 <div class=" px-5">
-    <h3 class="text-5xl text-[#9522E1] font-normal m-2.5 capitalize">Javascript Function </h3>
+    <h3 class="text-5xl text-[#9522E1] font-normal m-2.5 capitalize">Some built in objects in javascript</h3>
 <div>
     <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
         
         <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
-            <h3 class="my-2.5 text-2xl font-normal text-[white]">What is function?:</h3>
+            <h3 class="my-2.5 text-2xl font-normal text-[white]">Math object:</h3>
             <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
-                <p>Function is a block of code that received one or more input value that called parametter and returns a value based on parametter/parametters</p>
-            <p>ঘরের ছোট ছেলেকে যেমন সবাই যখন তখন যেকোনো কাজ করতে বলে তেমনি ফাংশন দিয়ে আমরা যখন তখন যেকোনো কাজ করিয়ে নিতে পারি।</p>
-            <p>Function এর একটি সুপার পাওয়ার আছে আর যেটা হল ফাংশন এর প্যারামিটারে ভ্যালু বসিয়ে বিভিন্ন ভ্যালু দিয়ে ফাংশনে বিভিন্ন রেজাল্ট পাওয়া যায়।
-            </p>
+            <p>Javascript has some built in object that contains some functions. one of them is Math. some math methods are...
+                <ol class="list-decimal pl-8">
+                    <li>Math.min(numbers), returns smallest number of given numbers.</li>
+                    <li>Math.max(numbers), returns largest number of given numbers.</li>
+                    <li>Math.PI() returns PI value ;</li>
+                    <li>Math.abs(number), returns absolute value of a number.</li>
+                    <li>Math.round(number), returns integer value of a number. based on decimal value. if decimal value greater than or equal 5 then return upper integer else return lower integer value. </li>
+                    <li>Math.floor(number), returns lower integer value of a number.  </li>
+                    <li>Math.ceil(number), returns upper integer value of a number.  </li>
+                    <li>Math.random(), returns a number between 0 to 1.  </li>
+                 </ol>
+        </p>
         </div>     
     </div>
     <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
-        <h3 class="my-2.5 text-2xl font-normal text-[white]">Function parameter:</h3>
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Date object:</h3>
         <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
-           <p>এই মানগুলোর উপর ভিত্তি করে function আউটপুট দেয় সেগুলোকে Function parametter বলে। Function parametter,  function  এর first bracket এর মধ্যে কমা দিয়ে দিয়ে দিতে হয়। Function parametter এক বা একাধিক হতে পারে। তবে যতগুলো প্যারামিটার দেয়া হবে। Function parametter কোনো একটি ভ্যালু বা ভ্যারিয়েবলের মান যে কোন একটি হতে পারে।  </p>
-            <ol class="list-decimal pl-8">
-            </ol>
+            <p>Some date object examples are..
+                <ol class="list-decimal pl-8">
+                    <li>new Date(); returns today's date</li>
+                    <li>const date = new Date("yyyy-mm-dd"); to asign a date as a variable value</li>
+                    <li>We can also asign a varable of a date thus-> const date = new Date(year, monthIndex, dayNumber, hours, minute, second);</li>
+                    <li>date.getMonth() returns month index of given date. In javascript, month index start from 0. So Jonuary will be 0, February will be 1 etc. </li>
+                    <li>We can set a date variable's month or year or day like-> date.setMonth(11); to set date variable's month's value december.</li>
+                    <li>to convert date as local string format date.toLocalString(), if we want to get special region we can give a parameter like date.toLocalString("en-GB"); return date as English Great Britain format </li>
+                    <li>unix epoc -- 01 january 1970</li>
+                </ol>
+             </p>
         </div>     
     </div>
     <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
-        <h3 class="my-2.5 text-2xl font-normal text-[white]">Return of function:</h3>
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Javascript swap</h3>
         <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
-            <p class="pl-8">
-                exampel: <br>
-                const add = (num1, num2)=>{ <br>
-                    const result = num1+num2;<br>
-                    return result;<br>
-                }<br>
-            const sum = add(25, 20)<br>
-               
-                console.log(sum);<br>
-            
-            </p>
-            <p>প্রসঙ্গত উল্লেখ্য, function এর শুধুমাত্র একটিই রিটার্ন হতে পারে। সেটা হতে পারে যেকোনো ভ্যালু তথা number, string, boolean, array, object etc.</p>
-
+            <p>Swap বলতে বুঝায় অদল বদল। আমরা যদি দুইটি Variable এর ভ্যালুকে অদল বদল করতে চাই তাহলে সেটি কয়েকভাবে করা যায়। <ol class="list-decimal pl-8">
+                <li>temporary varable এর মাধ্যমে।</li>
+                <li>Destructurning method ex: [x,y] = [y,x] এর মাধ্যমে।</li>
+                <li>অংক বা সংখ্যা থাকলে যোগ বিয়োগের মাধ্যমে।</li>
+                <li>বিট ওয়াইজ ম্যানুপুলেশন এর মাধ্যমে।</li>
+                <li></li>
+            </ol></p>
         </div>
 
     </div>
