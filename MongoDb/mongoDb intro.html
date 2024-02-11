@@ -1,0 +1,147 @@
+<div class=" px-5">
+    <h3 class="text-5xl text-[#9522E1] font-normal m-2.5 capitalize">Mongodb</h3>
+<div>
+    <div class=" grid grid-cols-1  xl:grid-cols-2 mx-auto my-5 items-stretch gap-5 justify-center ">
+        
+        <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal text-[white]">what is mongodb?:</h3>
+            <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+                <ul class="list-disc pl-8">
+                    <li>Document oriented database system.</li>
+                    <li>Store data as JSON-like format. <br>
+                        {<br>
+                            name: "Naimul Islam",<br>
+                            age: 31,<br>
+                            language:["Bangla", "English"],<br>
+                        }<br>
+                    </li>
+                </ul>
+        </div>     
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">RDBMS Vs MongoDB terms</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+           <p></p>
+            
+           <ol class="list-decimal pl-8">
+            <li>Database = database</li>
+            <li>Table = collection</li>
+            <li>Rows = Documents</li>
+            <li>Columns = Fields</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Mongoshell:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <ul class="list-disc pl-8">
+                <li>Run the mongoshell - mongo+ enter.</li>
+                <li>help.</li>
+                <li>database:
+                    <ol class="list-decimal pl-8">
+                        <li>show dbs</li>
+                        <li>create and switch to database: use databaseName</li>
+                        <li>check which database you are in: db+ Enter</li>
+                        <li>delete database: db.dropDatabase()</li>
+                    </ol>
+                </li>
+                <li>collection:  
+                    <ol class="list-decimal pl-8">
+                        <li>show collections</li>
+                        <li>db.creatCollection(name, options)</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">CRUD Operations- insert/create:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>Database is collection of documents</p>
+            <ol class="list-decimal pl-8">
+                <li>Document(row/records) - field and value pair & BSON format.</li>
+                <li>Collection(table)</li>
+                <li>Db.collectionName.insertOne()</li>
+                <li>Db.collectionName.insertMany()</li>
+                <li>Db.collectionName.insert()</li>
+               
+            </ol>
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Built in modules- FS module:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>Mongoshell commands <ol class="list-decimal pl-8">
+                <li>test> <br> 
+                    help</li>
+              <li>Shell Help:</li>
+              <li>use->Set current database</li>
+              <li>  show->'show databases'/'show dbs': Print a list of all available databases.</li>
+              <li>'show collections'/'show tables': Print a list of all collections for current database.</li>
+              <li>'show profile': Prints system.profile information.</li>
+              <li>'show users': Print a list of all users for current database.</li>
+              <li>'show roles': Print a list of all roles for current database.</li>
+              <li>'show log <type>': log for current connection, if type is not set uses 'global'</li>
+              <li>'show logs': Print all logs.</li>
+              <li> exit->Quit the MongoDB shell with exit/exit()/.exit</li>
+                 <li> quit->Quit the MongoDB shell with quit/quit()</li>
+                 <li> Mongo->Create a new connection and return the Mongo object. Usage: new Mongo(URI, options [optional])</li>
+                 <li> connect->Create a new connection and return the Database object. Usage: connect(URI, username [optional], password [optional])</li>
+                 <li> it->result of the last line evaluated; use to further iterate</li>
+                 <li>version->Shell version</li>
+                 <li>load->Loads and runs a JavaScript file into the current shell environment</li>
+                 <li>enableTelemetry->Enables collection of anonymous usage data to improve the mongosh CLI</li>
+                  <li>disableTelemetry->Disables collection of anonymous usage data to improve the mongosh CLI</li>
+                  <li>passwordPrompt->Prompts the user for a password</li>
+                  <li>sleep->Sleep for the specified number of milliseconds</li>
+                  <li>print->Prints the contents of an object to the output</li>
+                  <li>printjson->Alias for print()</li>
+                  <li>convertShardKeyToHashed->Returns the hashed value for the input using the same hashing function as a hashed index.</li>
+                  <li>cls->Clears the screen like console.clear()</li>
+                  <li>isInteractive->Returns whether the shell will enter or has entered interactive mode</li>
+            </ol>                    
+        </p>
+            
+
+        
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Example of array object condition in a function:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p class="pl-4">
+                const numbers = [1,2,3,4,5,6]; <br>
+                const sortNumbers = (array)=>{<br>
+                    let evenNum= [];<br>
+                    let oddNum =[];<br>
+                    const arrangedNum = {<br>
+                        even:[],<br>
+                        odd:[]<br>
+                    }<br>
+                    for (n of array){<br>
+                        if (n%2 ===0){<br>
+                        //    evenNum.unshift(n)<br>
+                           evenNum.push(n) <br>
+                        }<br>
+        
+                        else{<br>
+                            oddNum.push(n)<br>
+                        }<br>
+                    }<br>
+                    arrangedNum.even = evenNum;<br>
+                    arrangedNum.odd=oddNum;<br>
+        
+                    return arrangedNum<br>
+                }<br>
+                console.log(sortNumbers(numbers));<br>
+            </p>
+            
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+</div>

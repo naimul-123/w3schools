@@ -351,20 +351,70 @@
 
         // console.log(averageValue(phones));
 
-        const employees = [
-            { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
-            { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
-            { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
-            { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
-        ];
+        // const employees = [
+        //     { name: "shahin", experience: 5, starting: 20000, increment: 5000 },
+        //     { name: "shihab", experience: 3, starting: 15000, increment: 7000 },
+        //     { name: "shikot", experience: 9, starting: 30000, increment: 1000 },
+        //     { name: "shohel", experience: 0, starting: 29000, increment: 4000 },
+        // ];
 
-        function totalSalary(array){
-            let total= 0;
-            for(n of array){
-                total= (n.experience*n.increment)+ n.starting+total
-            }
+        // function totalSalary(array){
+        //     let total= 0;
+        //     for(n of array){
+        //         total= (n.experience*n.increment)+ n.starting+total
+        //     }
 
-            return total
-        }
+        //     return total
+        // }
 
-        console.log(totalSalary(employees))
+        // console.log(totalSalary(employees))
+
+        const numbers =[14,15,7,16,8,17,12,19];
+
+        // function getMax(array){
+        //     let maxVal=array[0];
+        //     for(let i=1; i<array.length; i++){
+                
+        //         if(array[i]- array[i-1]){
+        //             maxVal= array[i]
+        //         }
+        //     }
+
+        //     return maxVal;
+        // }
+
+        // console.log(getMax(numbers))
+        // function getMax(array){
+        //     let maxVal=array[0];
+        //     for(n of array){
+                
+        //         if(maxVal<n){
+        //             maxVal= n;
+        //         }
+        //     }
+
+        //     return maxVal;
+        // }
+
+        // console.log(getMax(numbers))
+        // function layeredDiscount(unit){
+        //     let price=0;
+        //     if(unit<=100){
+        //         price= 100*unit;
+        //     }
+
+        //     else if (unit<=200){
+        //         price = 100*100 + (unit-100)*90;
+        //     }
+        //     else {
+        //         price = 100*100 + 100*90 + (unit-200)*70;
+        //     }
+
+        //     return price;
+        // }
+
+        // console.log(layeredDiscount(104))
+
+        let Nam = "name";
+        const Name = Nam.to
+        document.getElementsByTagName("tagName");

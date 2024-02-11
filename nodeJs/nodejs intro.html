@@ -1,0 +1,123 @@
+<div class=" px-5">
+    <h3 class="text-5xl text-[#9522E1] font-normal m-2.5 capitalize">Javascript Function </h3>
+<div>
+    <div class=" grid grid-cols-1  xl:grid-cols-2 mx-auto my-5 items-stretch gap-5 justify-center ">
+        
+        <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal text-[white]">Why node.js?:</h3>
+            <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+                <ul class="list-disc pl-8">
+                    <li>Easy to learn</li>
+                    <li>It uses asynchronous programming. Which is different than PHP, ASP</li>
+                    <li>It can help us to create, open, read, write, delete and close files on the server.</li>
+                    <li>Used for collecting form data.</li>
+                    <li>Node.js can add, delete, modify data in your database.</li>
+                    <li>synchronous-> এর মানে হল একটি কাজ শেষ হওয়ার পরে অন্য কাজ করা আর asynchronous এর মানে হলো, একটি কাজ চলতে থাকবে, তার সাথে সাথে অন্য একটি কাজও শুরু হয়ে যাবে।</li>
+                </ul>
+        </div>     
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Environment setup</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+           <p>Environment setup এর জন্য দুইটি জিনিস দরকার হবে। </p>
+            
+           <ol class="list-decimal pl-8">
+            <li>Install Node.js from -> https://nodejs.org/en/</li>
+            <li>Editor -VSCode.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Node Modules:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <ul class="list-disc pl-8">
+                <li>Module is a set of functions. (think about js libraries such as Math).</li>
+                <li>3 types of modules:
+                    <ol class="list-decimal pl-8">
+                        <li>Local Modules(own created modules)</li>
+                        <li>Build-in Modules(node.js own modules) - http, url, path, fs, (no need to install)</li>
+                        <li>External modules(Managed by npm)</li>
+                    </ol>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Local modules export-import:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <ol class="list-decimal pl-8">
+                <li>exports.exportName = functionName; to use function from external file. এখানে সমান চিহ্ন এর আগের নাম দিয়ে ফাংশনটিকে অন্য জায়গা থেকে access করতে হবে। আর সমান চিহ্নের পরে function এর এক্সএক্ট নাম দিতে হবে।</li>
+                <li>যে file থেকে function কে import করতে হবে, সে ফাইলে গিয়ে দুইটি কাজ করতে হবে।:
+                    <ol class="list-decimal pl-8">
+                        <li>const variableName = require(file directory); তাহলে ঐ ফাইলের সবকিছু একটি এই ভেরিএবল এর মধ্যে চলে আসবে। </li>
+                        <li>variableName.exportName(); তাহলে ফাংশনটিকে আমরা এই ফাইল থেকে ইউজ করতে পারবো।</li>
+                        <li>এই সেইম প্রসেসে সব ধরণের ডেটা টাইপের জিনিসই export করা যায়।</li>
+                        <li>তবে একাধিক function, variable কে export করতে হলে বার বার exports.exportName = functionName; না লিখে এভাবে লেখা যায়: <br>
+                            module.exports = {function1, function2, ...., variable1, variable2....}
+                        </li>
+                        <li>তবে const variableName = require(file directory);  এই প্রসেসে ঐ file এ যতগুলো function আছে, সবগুলোই চলে আসবে। কিন্তু আমরা যদি চাই শুধুমাত্র একটি বা দুইটি function আমাদের লাগবে সেক্ষেত্রে আমরা এভাবে করতে পারি const{function1, function2} = require('file directory'); তাহলে আমরা যতগুলো function চাইবো, ততগুলোই আসবে। এর বেশি আসবে না। <br>
+                        আবার আমরা চাইলে function কে exports.functionName এভাবে ডিক্লারেশন করলে ও export হয়ে যাবে।
+                        
+                        </li>
+                    </ol>
+                </li>
+                
+            </ol>
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Built in modules- FS module:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>FS module এ অনেকগুলো function বা method রয়েছে। যেমন <ol class="list-decimal pl-8">
+                <li>writeFile() -> file তৈরি করতে বা file লেখতে।</li>
+                <li>appnedFile() -> file আপডেট করতে।</li>
+                <li>readFile() -> file কে রিড করতে।</li>
+                <li>rename() ->file কে রিনেম করতে।</li>
+                <li>Unlink() -> file কে ডিলিট করতে।</li>
+                <li>Exists() -> কোনো একটি file আছে কী না তা চেক করতে।</li>
+            </ol>  <br>
+            তবে এই function গুলো হলো ‍asynthronous function. একই কাজ করার জ
+        
+        </p>
+            
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Example of array object condition in a function:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p class="pl-4">
+                const numbers = [1,2,3,4,5,6]; <br>
+                const sortNumbers = (array)=>{<br>
+                    let evenNum= [];<br>
+                    let oddNum =[];<br>
+                    const arrangedNum = {<br>
+                        even:[],<br>
+                        odd:[]<br>
+                    }<br>
+                    for (n of array){<br>
+                        if (n%2 ===0){<br>
+                        //    evenNum.unshift(n)<br>
+                           evenNum.push(n) <br>
+                        }<br>
+        
+                        else{<br>
+                            oddNum.push(n)<br>
+                        }<br>
+                    }<br>
+                    arrangedNum.even = evenNum;<br>
+                    arrangedNum.odd=oddNum;<br>
+        
+                    return arrangedNum<br>
+                }<br>
+                console.log(sortNumbers(numbers));<br>
+            </p>
+            
+        </div>
+    </div>
+
+
+</div>
+
+</div>
+</div>

@@ -1,0 +1,147 @@
+<div class=" px-5">
+    <h3 class="text-5xl text-[#9522E1] font-normal m-2.5 capitalize">Javascript Function </h3>
+<div>
+    <div class=" grid grid-cols-1  xl:grid-cols-2 2xl:grid-cols-3 mx-auto my-5 items-stretch gap-5 justify-center ">
+        
+        <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+            <h3 class="my-2.5 text-2xl font-normal text-[white]">DOM intro:</h3>
+            <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+                <p>DOM= Document Object Model. DOM এর মধ্যে ৩টি জিনিস থাকে।
+                    <ol class="list-decimal pl-8">
+                        <li>HTML for markup</li>
+                        <li>CSS for style</li>
+                        <li>Javascript for manipulate</li>
+                    </ol>
+                DOM এ Html একটি tree এর মতো করে থাকে। যার মূল হল dom এবং html elements গুলো হল শাখা প্রশাখা।
+                </p>
+        </div>     
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">What DOM Defines?</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+    
+            
+           <ol class="list-decimal pl-8">
+                <li>The events for all HTML elements.</li>
+                <li>The methods to access all HTML elements.</li>
+                <li>The properties of all HTML elements as objects.</li>
+                <li>All HTML elements as objects.</li>
+            </ol>
+        </div>     
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">What can do Javascript with DOM?:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <ol class="list-decimal pl-8">
+                <li>Javascript can change all the html elements in the page.</li>
+                <li>Javascript can change all the HTML attributes in the page.</li>
+                <li>Javascript can change all the CSS styles in the page.</li>
+                <li>Javascript can remove existing HTML elements and attributes.</li>
+                <li>Javascript can add new HTML elements and attributes.</li>
+                <li>Javascript can react to all existing HTML events in the page.</li>
+            </ol>
+
+        </div>
+
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Get Elements By TagName:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>আমরা HTML এর কোনো ইলিমেন্টসকে document.getElementsByTagName("tagName"); দিয়ে পেতে পারি। এক্ষেত্রে  এটি একটি HTMLCollection return করবে। যেটি দেখতে অনেকটা array এর মতো। তবে পুরোপুরি array না। ‍array like object.</p>
+
+            
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Get Element By Id:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>HTML এর কোনো একটি ইলিমেন্টকে document.getElementById("idName"); দিয়ে পেতে পারি। এক্ষেত্রে  এটি একটি নির্দিষ্ট html element কে return করবে। id ইউনিক হওয়ায় একটি html document-এ শুধুমাত্র একটি id ই ব্যবহার করা যায়।</p>    
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Get Elements By ClassName:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>আমরা HTML এর কোনো নির্দিষ্ট className এর ইলিমেন্টসগুলোকে document.getElementsByClassName("className"); দিয়ে পেতে পারি। এক্ষেত্রে এটিও একটি HTMLCollection return করবে। যেটি দেখতে অনেকটা array এর মতো। তবে পুরোপুরি array না। ‍array like object.</p>
+          
+        </div>
+    </div>
+    
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">querySelectorAll:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>HTML এর ইলিমেন্টসগুলোকে CSS মতো করে সিলেক্ট করতে এটি ব্যবহার করা হয়। document.querySelectorAll("tagName or #idName or .className"); দিয়ে পেতে পারি। এক্ষেত্রে এটি একটি NodeList return করবে। যেটিও দেখতে অনেকটা array এর মতো। তবে পুরোপুরি array না। ‍array like object. তবে আমরা যদি NodeList এর শুধু প্রথম ইলিমেন্টটিকেই পেতে চাই তাহলে document.querySelector("tagName or #idName or .className"); দিতে হবে।</p> 
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">getAttribute:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>HTML এর ইলিমেন্টসগুলোর কোনো Attribute পেতে চাইলে যেকোনো ভাবে ইলিমেন্টটিকে সিলেক্ট করে তারপর document.querySelectorAll("tagName or #idName or .className").getAttribute("attributeName");  দিয়ে পেতে পারি। এক্ষেত্রে এটি ঐ ‍element এর ‍attribute গুলো রিটার্ন করবে।</p> 
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">class list:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>HTML এর ইলিমেন্টসগুলোর সবগুলো class পেতে চাইলে যেকোনো ভাবে ইলিমেন্টটিকে সিলেক্ট করে তারপর document.querySelectorAll("tagName or #idName or .className"); দিয়ে পেতে পারি। এক্ষেত্রে এটি একটি array return করবে, যেখানে সবগুলো class থাকবে।  classList এর কয়েকটি property আছে। যেমন: <ul>
+                <li>classList.add("className"); to add class in selected elements.</li>
+                <li>classList.remove("className"); to remove class from selected elements.</li>
+                <li>classList.contains("className"); to check if the class name contains in  selected elements.</li>
+            </ul></p> 
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">setAttribute:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>HTML এর ইলিমেন্টসগুলোতে কোনো একটি ‍attribute যোগ করতে চাইলে document.querySelectorAll("tagName or #idName or .className").setAttribute("attributeName", "attributeValue"); </p> 
+        </div>
+    </div>
+    
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">innerHtml vs innerText:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <table>
+                <caption class="caption-top text-center">
+                    innerHtml vs innerText
+                </caption>
+                <thead>
+                  <tr>
+                    <th>innerHtml</th>
+                    <th>innerText</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>return all html tags with text within selected tag.</td>
+                    <td>return only text within selected tags.</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2"> Serach google for more information</td>
+                    </tr>
+                </tfoot>
+              </table>
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">Add/change style with javascript:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>আমরা জাভাস্ক্রিপ্ট এর মাধ্যমে চাইলে কোনো একটি ইলিমেন্ট এর স্টাইল দিতে পারি অথবা চেঞ্জ করতে পারি.  এটা করতে হলে আমাদেরকে যেকোনো ভাবে ইলিমেন্টকে সিলেক্ট করতে হবে। সিলেক্ট করে তারপর .style.styleName = "style value"; এভাবে দিতে হবে।  এক্ষেত্রে styleName এ যেখানে হাইফেন আছে, সেখানে হাইফেন উঠে গিয়ে বড় অক্ষরে হবে। যেমন সিএসএস এ background-color আছে এর পরিবর্তে হবে backgroundColor । </p>
+        </div>
+    </div>
+    <div class="bg-[#9522E1] p-4 space-y-3 shadow-[#9522E1] shadow-lg rounded-lg h-[450px] ">
+        <h3 class="my-2.5 text-2xl font-normal text-[white]">NodeList and Html Collection:</h3>
+        <div class="border-l-8 border-[#FEDE00] bg-[white] text-[#9522E1] p-3 overflow-auto h-4/5">
+            <p>আমরা জাভাস্ক্রিপ্ট এর মাধ্যমে চাইলে কোনো একটি ইলিমেন্ট এর child বা parent বা ‍siblings  কে পেতে পারি। যেমন: <ul>
+                <li>.appendChild(childName)</li>
+                <li>parendNode() get parent elements</li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul></p>
+        </div>
+    </div>
+
+</div>
+
+</div>
+</div>
